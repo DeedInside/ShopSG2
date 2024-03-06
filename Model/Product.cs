@@ -1,0 +1,26 @@
+﻿namespace ShopSG2.Model
+{
+    public class Product
+    {
+        public Product(string name, string description, double price, string pythImg)
+        {
+            Name = name;
+            Description = description;
+            Price = price;
+            PythImg = pythImg;
+        }
+        public Product() { }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        /// <summary>
+        /// Себестоимость
+        /// </summary>
+        public double Price { get; set; }
+        public string PythImg { get; set; }
+        public override string ToString()
+        {
+            return $"Id:{Id} Name:{Name} Description:{Description} Price: {Price} PythImg:{PythImg}";
+        }
+    }
+}

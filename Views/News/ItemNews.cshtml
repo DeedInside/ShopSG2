@@ -1,0 +1,10 @@
+﻿@using ShopSG2.Model
+@model ProductShop
+
+<div>
+    <h1>@Model.Product.Name</h1>
+    <p>@Model.Product.Description</p>
+    <p>Цена: @Model.Price</p>
+    <p>Дата поступления: @Model.ReceiptDate</p>
+    <p>Дата окончания срока годности: @Model.ExpirationDate</p>
+</div>

@@ -1,0 +1,17 @@
+﻿@using ShopSG2.DataContext
+
+<div>
+    <h1>Загрузка товара в систему</h1>
+    <form method="post" asp-action="AddProd">
+        <label>Product name:</label><br />
+        <input type="text" name="Name" /><br />
+        <label>Description:</label><br />
+        <input type="text" name="Description" /><br />
+        <label>Price:</label><br />
+        <input type="text" name="Price" /><br />
+                
+        <input type="submit" value="Отправить" />
+    </form>
+</div>
+
+@await Html.PartialAsync("PrintProduct",ApplicationContext.ListProducts)

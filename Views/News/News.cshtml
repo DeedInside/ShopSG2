@@ -1,0 +1,7 @@
+﻿@using ShopSG2.Model
+@model List<ProductShop>
+
+@foreach (var item in Model)
+{
+    await Html.RenderPartialAsync("ItemNews",item);
+}
